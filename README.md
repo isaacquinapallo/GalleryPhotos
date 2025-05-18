@@ -46,16 +46,24 @@ Aplicación móvil construida con **Ionic Framework** que permite tomar, visuali
 
 ## 📷 Capturas de pantalla
 Splash
+
 ![Imagen de WhatsApp 2025-05-17 a las 19 52 26_f84199b3](https://github.com/user-attachments/assets/091a63f9-3f7b-4395-91f5-fddbe68880df)
 
+
 tab1
+
 ![Imagen de WhatsApp 2025-05-17 a las 19 52 26_0e23682a](https://github.com/user-attachments/assets/2381c4a2-0e19-40db-8b38-684f3130dce7)
 
+
 tab2
+
 ![image](https://github.com/user-attachments/assets/b373bd2e-d8eb-4394-a32a-8e80aa334674)
 
+
 tab3
+
 ![image](https://github.com/user-attachments/assets/3bf8d723-dd14-4c36-8cdb-32fdbc2e2f05)
+
 
 ---
 
