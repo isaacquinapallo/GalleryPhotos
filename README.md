@@ -1,7 +1,7 @@
 # 📸 Ionic Photo Gallery App
 
 Aplicación móvil construida con **Ionic Framework** que permite tomar, visualizar y gestionar fotos. Compatible con Android y navegadores (`ionic serve`), esta app integra funcionalidades modernas como splash screen, iconos personalizados y almacenamiento de imágenes.
-
+APK UBICADO EN ESTE REPOSITORIO COMO app-debug.apk
 ---
 
 ## 🚀 Características principales
