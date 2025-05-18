@@ -1,0 +1,27 @@
+<!-- tab1.page.html -->
+<header style="background-color:#3880ff; padding:12px; color:white; text-align:center; font-weight:bold;">
+  Saved Photos 1
+</header>
+
+<main style="padding: 10px; height: calc(100vh - 60px); overflow-y: auto;">
+  <!-- Mostrar galería solo si showGallery es true -->
+  <div *ngIf="showGallery" style="max-width: 600px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <div *ngFor="let photo of photoService.photos" style="flex: 0 0 48%; text-align: center; border: 1px solid #ccc; border-radius: 8px; padding: 8px;">
+      <img [src]="photo.webviewPath" alt="{{photo.filepath}}" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 6px;">
+      <div style="font-weight: bold; font-family: Arial, sans-serif; font-size: 14px; color: #333;">
+        {{ photo.filepath }}
+      </div>
+    </div>
+  </div>
+
+  <!-- Mostrar mensaje si no hay fotos después de intentar cargar -->
+  <div *ngIf="showGallery && photoService.photos.length === 0" style="text-align:center; margin-top: 20px;">
+    No hay fotos guardadas. Presiona el botón para cargar.
+  </div>
+
+  <div style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);">
+    <button (click)="loadPhotos()" style="background-color:#3880ff; border:none; border-radius: 50%; width: 56px; height: 56px; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0;">
+      <img src="assets/icon.png" alt="Icono fotos" style="width: 24px; height: 24px;">
+    </button>
+  </div>
+</main>

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Photo Gallery 2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Mostrar las fotos -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let photo of photoService.photos">
+        <ion-img [src]="photo.webviewPath"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Botones abajo -->
+  <div style="position: absolute; bottom: 20px; left: 0; right: 0; display: flex; justify-content: center; gap: 16px;">
+    <ion-fab-button (click)="takePhoto()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-button (click)="openGallery()">
+      <ion-icon name="image"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-button (click)="takeLowQualityPhoto()">
+      <ion-icon name="camera-outline"></ion-icon>
+    </ion-fab-button>
+  </div>
+</ion-content>

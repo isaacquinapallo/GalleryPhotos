@@ -1,0 +1,16 @@
+ion-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ion-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* opcional, para que se vean más bonitos */
+}
+
+.fab-above-tabs {
+  z-index: 9999;
+}
